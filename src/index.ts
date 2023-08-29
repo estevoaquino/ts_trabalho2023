@@ -1,6 +1,7 @@
 import express from 'express';
 import 'reflect-metadata';
 import routes from './routes';
+import './database/connect.ts'
 const app = express();
 app.use(express.json());
 app.use(routes); // depois da definição do parser via json
